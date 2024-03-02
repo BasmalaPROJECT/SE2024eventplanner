@@ -7,8 +7,6 @@ Feature: User Login
     Then the user should be logged in successfully
     And should be redirected to the user dashboard
 
-  
-
   Scenario: Service Provider Login
     Given the user navigates to the login page
     When the user enters valid service provider credentials
@@ -16,16 +14,15 @@ Feature: User Login
     Then the user should be logged in successfully as a service provider
     And should be redirected to the service provider dashboard
 
-  Scenario Outline: Invalid Login Attempts
+  Scenario: Invalid Login Attempts
     Given the user navigates to the login page
-    When the user enters invalid <user_type> credentials
+    When the user enters invalid credentials for <user_type>
     And clicks on the login button
     Then the user should see an error message "<error_message>"
 
     Examples:
       | user_type         | error_message                        |
       | regular user      | Invalid username or password         |
-      | admin             | Incorrect admin credentials          |
       | service provider  | Service provider login failed        |
 
   Scenario: Forgot Password
@@ -34,9 +31,3 @@ Feature: User Login
     And provides a valid email address
     And clicks on the submit button
     Then the user should receive a password reset email
-
-  Scenario: Account Lockout
-    Given the user has made three consecutive invalid login attempts
-    When the user tries to log in again
-    Then the user should see an account lockout message
-

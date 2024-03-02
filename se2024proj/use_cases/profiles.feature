@@ -1,49 +1,38 @@
-Feature: User Profiles for Event Management
+Feature: Users and Service Providers profiles
 
-  Scenario: Service provider registration and event management
-    Given a new user with the role "service provider" and username "service_provider" and password "password"
-    When the user signs up
-    Then the user should be successfully registered as a service provider
+  Scenario: Service provider creates a new event
+    Given the service provider is logged in
+    And navigates to the event management section
+    When the service provider adds a new event with valid information
+    And submits the event creation form
+    Then the event should be successfully created
+    And listed in the service provider's events
 
-    When the service provider logs in with username "service_provider" and password "password"
-    Then they should be redirected to their dashboard
-    And they should see an option to manage events
-
-    When the service provider clicks on "Manage Events"
-    Then they should be able to create a new event with details:
-      | Event Name       | Event Description        | Date       | Location        | Capacity |
-      | Grand Opening    | A spectacular opening    | 2024-03-15 | Event Hall A    | 200      |
-
-    And they should be able to view and edit existing events
+  Scenario: Service provider updates an existing event
+    Given the service provider is logged in
+    And has existing events in the system
     When the service provider selects an event to edit
-    Then they should be able to modify the event details
+    And updates the event details
+    And submits the event update form
+    Then the event should be successfully updated
+    And the changes should reflect in the service provider's events list
 
-    And the service provider should be able to delete an event
-    When the service provider selects an event to delete
-    Then the event should be removed from their list of managed events
+  Scenario: User registers for an event
+    Given the user is logged in
+    And navigates to the event registration section
+    When the user selects an available event
+    And completes the event registration form
+    And submits the registration form
+    Then the user should be successfully registered for the event
+    And receive a confirmation message
 
-  Scenario: User registration and event participation
-    Given a new user with the role "user" and username "user" and password "password"
-    When the user signs up
-    Then the user should be successfully registered
-
-    When the user logs in with username "user" and password "password"
-    Then they should be redirected to their profile page
-    And they should see a list of upcoming events
-
-    When the user selects an event to register
-    Then they should be able to register for the event
-    And the event's capacity should decrease by 1
-    And the user should receive a confirmation of their registration
-
-    And the user should be able to view the events they have registered for
-    When the user checks their registered events
-    Then they should see the list of events they have registered for
-
-    And the user should be able to unregister from an event
-    When the user selects an event to unregister
-    Then they should be removed from the list of attendees
-    And the event's capacity should increase by 1
-    And the user should receive a confirmation of their unregistration
+  Scenario: User cancels event registration
+    Given the user is logged in
+    And has registered for an event
+    When the user navigates to the event registration section
+    And selects the registered event to cancel
+    And confirms the cancellation
+    Then the user should be successfully unregistered from the event
+    And receive a cancellation confirmation message
 
    

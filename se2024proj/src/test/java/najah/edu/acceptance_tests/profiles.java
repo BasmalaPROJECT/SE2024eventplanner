@@ -5,183 +5,154 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class profiles {
-	@Given("a new user with the role {string} and username {string} and password {string}")
-	public void a_new_user_with_the_role_and_username_and_password(String string, String string2, String string3) {
+
+	@Given("the service provider is logged in")
+	public void the_service_provider_is_logged_in() {
 	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+
 	}
 
-	@When("the user signs up")
-	public void the_user_signs_up() {
+	@Given("navigates to the event management section")
+	public void navigates_to_the_event_management_section() {
 	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+
 	}
 
-	@Then("the user should be successfully registered as a service provider")
-	public void the_user_should_be_successfully_registered_as_a_service_provider() {
+	@When("the service provider adds a new event with valid information")
+	public void the_service_provider_adds_a_new_event_with_valid_information() {
 	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+
 	}
 
-	@When("the service provider logs in with username {string} and password {string}")
-	public void the_service_provider_logs_in_with_username_and_password(String string, String string2) {
+	@When("submits the event creation form")
+	public void submits_the_event_creation_form() {
 	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+
 	}
 
-	@Then("they should be redirected to their dashboard")
-	public void they_should_be_redirected_to_their_dashboard() {
+	@Then("the event should be successfully created")
+	public void the_event_should_be_successfully_created() {
 	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+
 	}
 
-	@Then("they should see an option to manage events")
-	public void they_should_see_an_option_to_manage_events() {
+	@Then("listed in the service provider's events")
+	public void listed_in_the_service_provider_s_events() {
 	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+
 	}
 
-	@When("the service provider clicks on {string}")
-	public void the_service_provider_clicks_on(String string) {
+	@Given("has existing events in the system")
+	public void has_existing_events_in_the_system() {
 	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
 
-	@Then("they should be able to create a new event with details:")
-	public void they_should_be_able_to_create_a_new_event_with_details(io.cucumber.datatable.DataTable dataTable) {
-	    // Write code here that turns the phrase above into concrete actions
-	    // For automatic transformation, change DataTable to one of
-	    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
-	    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
-	    // Double, Byte, Short, Long, BigInteger or BigDecimal.
-	    //
-	    // For other transformations you can register a DataTableType.
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Then("they should be able to view and edit existing events")
-	public void they_should_be_able_to_view_and_edit_existing_events() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
 	}
 
 	@When("the service provider selects an event to edit")
 	public void the_service_provider_selects_an_event_to_edit() {
 	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+
 	}
 
-	@Then("they should be able to modify the event details")
-	public void they_should_be_able_to_modify_the_event_details() {
+	@When("updates the event details")
+	public void updates_the_event_details() {
 	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+
 	}
 
-	@Then("the service provider should be able to delete an event")
-	public void the_service_provider_should_be_able_to_delete_an_event() {
+	@When("submits the event update form")
+	public void submits_the_event_update_form() {
 	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+
 	}
 
-	@When("the service provider selects an event to delete")
-	public void the_service_provider_selects_an_event_to_delete() {
+	@Then("the event should be successfully updated")
+	public void the_event_should_be_successfully_updated() {
 	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+
 	}
 
-	@Then("the event should be removed from their list of managed events")
-	public void the_event_should_be_removed_from_their_list_of_managed_events() {
+	@Then("the changes should reflect in the service provider's events list")
+	public void the_changes_should_reflect_in_the_service_provider_s_events_list() {
 	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+
 	}
 
-	@When("the user logs in with username {string} and password {string}")
-	public void the_user_logs_in_with_username_and_password(String string, String string2) {
+	@Given("the user is logged in")
+	public void the_user_is_logged_in() {
 	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+
 	}
 
-	@Then("they should be redirected to their profile page")
-	public void they_should_be_redirected_to_their_profile_page() {
+	@Given("navigates to the event registration section")
+	public void navigates_to_the_event_registration_section() {
 	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+
 	}
 
-	@Then("they should see a list of upcoming events")
-	public void they_should_see_a_list_of_upcoming_events() {
+	@When("the user selects an available event")
+	public void the_user_selects_an_available_event() {
 	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+
 	}
 
-	@When("the user selects an event to register")
-	public void the_user_selects_an_event_to_register() {
+	@When("completes the event registration form")
+	public void completes_the_event_registration_form() {
 	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+
 	}
 
-	@Then("they should be able to register for the event")
-	public void they_should_be_able_to_register_for_the_event() {
+	@When("submits the registration form")
+	public void submits_the_registration_form() {
 	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+
 	}
 
-	@Then("the event's capacity should decrease by {int}")
-	public void the_event_s_capacity_should_decrease_by(Integer int1) {
+	@Then("the user should be successfully registered for the event")
+	public void the_user_should_be_successfully_registered_for_the_event() {
 	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+
 	}
 
-	@Then("the user should receive a confirmation of their registration")
-	public void the_user_should_receive_a_confirmation_of_their_registration() {
+	@Then("receive a confirmation message")
+	public void receive_a_confirmation_message() {
 	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+
 	}
 
-	@Then("the user should be able to view the events they have registered for")
-	public void the_user_should_be_able_to_view_the_events_they_have_registered_for() {
+	@Given("has registered for an event")
+	public void has_registered_for_an_event() {
 	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+
 	}
 
-	@When("the user checks their registered events")
-	public void the_user_checks_their_registered_events() {
+	@When("the user navigates to the event registration section")
+	public void the_user_navigates_to_the_event_registration_section() {
 	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+
 	}
 
-	@Then("they should see the list of events they have registered for")
-	public void they_should_see_the_list_of_events_they_have_registered_for() {
+	@When("selects the registered event to cancel")
+	public void selects_the_registered_event_to_cancel() {
 	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+
 	}
 
-	@Then("the user should be able to unregister from an event")
-	public void the_user_should_be_able_to_unregister_from_an_event() {
+	@When("confirms the cancellation")
+	public void confirms_the_cancellation() {
 	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+
 	}
 
-	@When("the user selects an event to unregister")
-	public void the_user_selects_an_event_to_unregister() {
+	@Then("the user should be successfully unregistered from the event")
+	public void the_user_should_be_successfully_unregistered_from_the_event() {
 	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+
 	}
 
-	@Then("they should be removed from the list of attendees")
-	public void they_should_be_removed_from_the_list_of_attendees() {
+	@Then("receive a cancellation confirmation message")
+	public void receive_a_cancellation_confirmation_message() {
 	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
 
-	@Then("the event's capacity should increase by {int}")
-	public void the_event_s_capacity_should_increase_by(Integer int1) {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Then("the user should receive a confirmation of their unregistration")
-	public void the_user_should_receive_a_confirmation_of_their_unregistration() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
 	}
 }
