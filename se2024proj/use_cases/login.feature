@@ -1,5 +1,6 @@
 Feature: User Login
 
+
   Scenario: Regular User Login
     Given the user navigates to the login page
     When the user enters valid regular user credentials

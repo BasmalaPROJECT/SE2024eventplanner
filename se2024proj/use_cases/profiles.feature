@@ -1,5 +1,6 @@
 Feature: Users and Service Providers profiles
 
+
   Scenario: Service provider creates a new event
     Given the service provider is logged in
     And navigates to the event management section

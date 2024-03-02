@@ -1,5 +1,6 @@
 Feature: Event Management by User (Attendee)
 
+
   Scenario: User searches for events
     Given the user is logged in
     And navigates to the event search section

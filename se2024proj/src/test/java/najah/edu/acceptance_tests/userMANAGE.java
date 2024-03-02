@@ -10,6 +10,7 @@ public class userMANAGE {
 	public void navigates_to_the_event_search_section() {
 	    // Write code here that turns the phrase above into concrete actions
 
+		
 	}
 
 	@When("the user searches for events by entering keywords or filters")

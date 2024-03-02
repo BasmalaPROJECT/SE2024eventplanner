@@ -9,6 +9,7 @@ public class serviceproviderMANAGE {
 	public void navigates_to_the_event_creation_section() {
 	    // Write code here that turns the phrase above into concrete actions
 
+		
 	}
 
 	@When("the service provider selects {string} as the event category")

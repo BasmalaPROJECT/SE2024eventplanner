@@ -1,5 +1,6 @@
 Feature: User Registration for Different Roles
 
+
   Scenario: Regular User Sign Up
     Given the user is on the sign-up page
     When the user enters valid registration information for a regular user

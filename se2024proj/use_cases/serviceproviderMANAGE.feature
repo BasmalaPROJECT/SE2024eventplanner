@@ -1,5 +1,6 @@
 Feature: Event Creation and Management by Service Provider
 
+
   Scenario: Service provider adds a new party event
     Given the service provider is logged in
     And navigates to the event creation section

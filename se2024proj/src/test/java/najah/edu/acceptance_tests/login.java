@@ -9,6 +9,7 @@ public class login {
 	public void the_user_navigates_to_the_login_page() {
 	    // Write code here that turns the phrase above into concrete actions
 
+		
 	}
 
 	@When("the user enters valid regular user credentials")

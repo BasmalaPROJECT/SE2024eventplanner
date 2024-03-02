@@ -9,6 +9,7 @@ public class signup {
 	public void the_user_is_on_the_sign_up_page() {
 	    // Write code here that turns the phrase above into concrete actions
 
+		
 	}
 
 	@When("the user enters valid registration information for a regular user")

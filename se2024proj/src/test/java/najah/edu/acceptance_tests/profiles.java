@@ -10,6 +10,7 @@ public class profiles {
 	public void the_service_provider_is_logged_in() {
 	    // Write code here that turns the phrase above into concrete actions
 
+		
 	}
 
 	@Given("navigates to the event management section")
