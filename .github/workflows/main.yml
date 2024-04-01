@@ -37,4 +37,4 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=basPROJse_SE2024eventplanner
 
-        working-directory: C:\Users\BS_PC\SE2024eventplanner\se2024projAAA
+        working-directory: C:\Users\BS_PC\SE2024eventplanner\se2024projAAA\se2024proj22
